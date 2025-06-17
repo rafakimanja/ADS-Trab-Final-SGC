@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'go build -o meuapp'
+                sh 'go run main.go'
             }
         }
     }
