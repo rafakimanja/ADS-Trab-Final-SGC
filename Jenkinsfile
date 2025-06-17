@@ -12,7 +12,7 @@ pipeline {
        
         stage("build") {
             steps {
-                sh 'go run main.go'
+                sh 'go build -o meuapp main.go'
             }
         }
 
